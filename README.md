@@ -1,10 +1,6 @@
 # Universal Document Linking for Enhancing the Zero-Shot Retrieval 
 
-```diff
-- Script based codes will be available soon.
-```
-
-## This code is for reproducing the result of Universal Document Linking
+$${\color{red}Script based codes will be available soon.}$$
 
 * We reduce the size of the documents to 500 during generating the synthetic queries. This helps to reproduce the results quickly. You are welcome to run on the whole dataset as well but it may take time.
 
