@@ -3,6 +3,9 @@
 > [!NOTE]
 > Script based codes will be available soon.
 
+> [!NOTE]
+> We plan to share the retrieval models fine-tuned with the Universal Document Linking (UDL) method.
+
 * We reduce the size of the documents to 500 during generating the synthetic queries. This helps to reproduce the results quickly. You are welcome to run on the whole dataset as well but it may take time.
 
 * Here, we show the runbook based on Jupyter Notebook (*Universal_Document_Linking_Code.ipynb*). 
