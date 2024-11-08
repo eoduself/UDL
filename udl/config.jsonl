@@ -1,0 +1,9 @@
+{
+    "dataset": "nfcorpus", 
+    "query_aug": "qgen", 
+    "ques_per_passage": 1,
+    "retrieval_model_name": "msmarco-distilbert-base-v3",
+    "gamma": 0.7, 
+    "delta": 0.4,
+    "udl_steps": [1,2,3,4,5]
+}
