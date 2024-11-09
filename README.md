@@ -13,23 +13,26 @@ This repository includes two code versions:
 We hope you find these resources helpful!
 
 ## The summary of steps is as follows:
-   (A) Download NER Models. You only need to run this part once.
 
-   (B) Set Parameters to do the experiments. 
+Summary of Steps:
+
+   (A) Download NER Models – Run this step once to set up the necessary NER models.
+
+   (B) Set Parameters to do the experiments - Configure parameters for the experiments.
    
-   (C) Download Dataset. 
+   (C) Download Dataset - Acquire the required dataset.
       
-   (D) Decision of Similarity Model. 
+   (D) Decision of Similarity Model - Choose the similarity model to extract document embedding.
    
-   (E) Decision of Similarity Score. 
+   (E) Decision of Similarity Score - Define the similarity score to link.
    
-   (F) Link Documents based on (D) and (E). 
+   (F) Link Documents - Link documents based on the chosen similarity model and similarity score.
    
-   (G) Generate Synthetic Queries. 
+   (G) Generate Synthetic Queries - Create synthetic queries for training.
    
-   (H) Fine-tune Retrieval Model. 
+   (H) Fine-tune Retrieval Model - Train the retrieval model with the documents and synthetic queries.
    
-   (I) Evaluate Retrieval Model. 
+   (I) Evaluate Retrieval Model - Assess the performance of the retrieval model.
 
 ## Setup:
    (A) Create virtual environment. 
