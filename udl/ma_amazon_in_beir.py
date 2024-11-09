@@ -6,6 +6,7 @@ import os
 import json
 
 # For NDCG, we set the gains of E, S, C, and I to 1.0, 0.1, 0.01, and 0.0, respectively
+# https://dl.acm.org/doi/abs/10.1145/3583780.3615157
 def label_value(x):
     if x == "E":
        return 1.0
@@ -77,7 +78,7 @@ with open("esci-data/ndcg/queries.jsonl", "w") as output:
 print("Reassign Gains for Recall measurement.")
 
 # For Recall, we set the gains of E, S, C, and I to 1.0, 0.0, 0.0, and 0.0, respectively
-
+# https://dl.acm.org/doi/abs/10.1145/3583780.3615157
 for key in qrels.keys():
   for key2 in qrels[key].keys():
     if qrels[key][key2] != 1.0:
