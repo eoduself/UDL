@@ -1,13 +1,16 @@
 # Universal Document Linking for Enhancing the Zero-Shot Retrieval 
 
 > [!NOTE]
-> We plan to share the retrieval models fine-tuned with the Universal Document Linking (UDL) method.
+> We plan to share retrieval models fine-tuned using the Universal Document Linking (UDL) method.
 
-Thank you for visiting to look our code for *Link, Synthesize, Retrieve: Universal Document Linking for Zero-Shot Information Retrieval @EMNLP 2024 Main*
+Thank you for visiting our repository for *Link, Synthesize, Retrieve: Universal Document Linking for Zero-Shot Information Retrieval*, presented at EMNLP 2024.
 
-There are two versions of codes: Notebook and Script. 
-- Notebook: It is easy to check the whole flow of the algorithm.
-- Script: It is helpful for digging into each part to further investigation and editing.
+This repository includes two code versions:
+
+- Notebook: Provides an overview of the entire algorithm flow, making it easy to understand and run end-to-end.
+- Script: Offers a modular version, ideal for deeper exploration and customization of each component.
+
+We hope you find these resources helpful!
 
 ## The summary of steps is as follows:
    (A) Download NER Models. You only need to run this part once.
