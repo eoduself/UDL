@@ -34,7 +34,5 @@ def main():
     ## evaluate retrieval model
     evaluation(parameter["dataset"], data_path, model_save_path)
 
-
-
 if __name__ == "__main__":
     main()
