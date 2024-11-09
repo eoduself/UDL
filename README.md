@@ -12,7 +12,7 @@ This repository includes two code versions:
 
 We hope you find these resources helpful!
 
-## Summary of Steps::
+## Summary of Steps:
 
    (A) Download NER Models – Run this step once to set up the necessary NER models.
 
@@ -80,22 +80,41 @@ We hope you find these resources helpful!
    ```      
 
 ## Runbook:
-   (A) 
-   
-   (B) 
-   
-   (C) 
-   
-   (D) 
-   
-   (E) 
-   
-   (F) 
+All the following files are located inside `udl` folder
 
-- If you want to test on MA-Amazon dataset, please run all lines in *MA_Amazon_in_BEIR.ipynb* or *python udl/ma_amazon_in_beir.py* first. This code is for converting the MA-Amazon dataset to BEIR format. 
+   (A) Define the experimental parameters inside `config.jsonl`:
+   ```
+   - dataset: Specify a dataset that you want to try: nfcorpus, scifact, arguana, scidocs, climate-fever, trec-covid, quora, germanquad, vihealthqa, ma-amazon
+   - query_aug: Specify the query augmentation that you want to try: crop, rm3, summarization, flan, open_llama, qgen.
+      Note that qgen is only one tested on Vietnamese and German datasets.
+   - ques_per_passage: Number of synthetic quries per document
+   - retrieval_model_name: Specify a retrieval model that you want to try.
+      For English, all-mpnet-base-v2, msmarco-distilbert-base-v3, Muennighoff/SGPT-125M-weightedmean-msmarco, sentence-transformers/distiluse-base-multilingual-cased-v2
+      For German, svalabs/bi-electra-ms-marco-german-uncased, T-Systems-onsite/cross-en-de-roberta-sentence-transformer, sentence-transformers/distiluse-base-multilingual-cased-v2
+      For Vietnamese, VoVanPhuc/sup-SimCSE-VietNamese-phobert-base, keepitreal/vietnamese-sbert, sentence-transformers/distiluse-base-multilingual-cased-v2    
+   - gamma: gamma value for decision of similarity model
+   - delta: delta value for decision of similarity score
+   ```
 
-- Our implementation is highly influenced by https://github.com/beir-cellar/beir.
+   (B) Include python path:
+   ```
+   export PYTHONPATH=${PYTHONPATH}:/content/udl
+   ```
+   
+   (C) Run the experiment: 
+   ```
+   python udl/main.py
+   ```
+   
+   (D) Additional Notes:
+   
+   - MA-Amazon Dataset: Run the following to convert the MA-Amazon dataset to BEIR format. 
+   ```
+   python udl/ma_amazon_in_beir.py
+   ```      
+    
 
+### Our implementation is highly influenced by https://github.com/beir-cellar/beir.
 
 ### If you use this code or build upon this idea, please cite the following paper:
 ```bibtext
