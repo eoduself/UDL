@@ -86,7 +86,8 @@ All files referenced below are located within the `udl` folder.
    
 - dataset: Choose a dataset to use for the experiment. Options include: `nfcorpus, scifact, arguana, scidocs, climate-fever, trec-covid, quora, germanquad, vihealthqa, ma-amazon`
 - query_aug: Specify the query augmentation technique. Options: `crop, rm3, summarization, flan, open_llama, qgen`
--    Note: qgen is currently tested only on Vietnamese and German datasets.
+  
+     Note: qgen is currently tested only on Vietnamese and German datasets.
 - ques_per_passage: Set the number of synthetic queries per document.
 - retrieval_model_name: Select a retrieval model.
   
