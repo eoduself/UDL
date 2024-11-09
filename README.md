@@ -58,7 +58,7 @@ We hope you find these resources helpful!
    ```
    pip install transformers==4.30.2    
    ```  
-   - SGPT Model: For Muennighoff/SGPT-125M-weightedmean-msmarco, install this specific version:
+   - SGPT Model: For `Muennighoff/SGPT-125M-weightedmean-msmarco`, install this specific version:
    ```
    pip install --upgrade git+https://github.com/Muennighoff/sentence-transformers.git@sgpt_poolings_specb
    ```
