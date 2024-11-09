@@ -39,10 +39,8 @@ def load_dataset(dataset, doc_size=None):
         lang = "English"
 
     print("Language of dataset:", lang)
-
-    # Here, we reduce the size of documents (500) during generating the synthetic queries.
-    # This helps to reproduce the results and ideas quickly.
-    # You are welcome to run on the whole dataset as well but it may take time.
+ 
+    # This is for reducing the size of documents during generating the synthetic queries.
     if doc_size != None:
         loc = 0
         new_document = {}
