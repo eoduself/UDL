@@ -12,9 +12,7 @@ This repository includes two code versions:
 
 We hope you find these resources helpful!
 
-## The summary of steps is as follows:
-
-Summary of Steps:
+## Summary of Steps::
 
    (A) Download NER Models – Run this step once to set up the necessary NER models.
 
