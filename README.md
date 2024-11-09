@@ -103,7 +103,7 @@ All files referenced below are located within the `udl` folder.
 
    (B) Set Python Path:
    ```
-   export PYTHONPATH=${PYTHONPATH}:/content/udl
+   export PYTHONPATH=${PYTHONPATH}:${HOME}/udl
    ```
    
    (C) Run the Experiment: 
