@@ -22,7 +22,8 @@ def decision_model(document_title_text, lang, max_feature=36000, gamma=0.7):
     tf_idf_array = tf_idf_vector.toarray()
 
     # 1. Measure (# of terms with entropy > 1) /  (# of terms with entropy <= 1).
-    # 2. If it is higher than gamma, considers Pre-trained LM for calculating cosine-similarity. If not, uses TF-IDF for measuring cosine-similarity.
+    # 2. If it is higher than gamma, considers Pre-trained LM for extracting document embedding. 
+    #    If not, uses TF-IDF for extracting document embedding.
 
     shannon = entropy(tf_idf_array, base=2) * (max_feature / over_size)
 
