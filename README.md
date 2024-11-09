@@ -113,7 +113,7 @@ All files referenced below are located within the `udl` folder.
    
    (D) Additional Notes:
    
-   - MA-Amazon Dataset: To convert the MA-Amazon dataset to BEIR format, run:
+- MA-Amazon Dataset: To convert the MA-Amazon dataset to BEIR format, run:
      
    ```
    python udl/ma_amazon_in_beir.py
