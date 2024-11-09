@@ -80,43 +80,47 @@ We hope you find these resources helpful!
    ```      
 
 ## Runbook:
-All the following files are located inside `udl` folder
+All files referenced below are located within the `udl` folder.
 
-   (A) Define the experimental parameters inside `config.jsonl`:
-   ```
-   - dataset: Specify a dataset that you want to try: nfcorpus, scifact, arguana, scidocs, climate-fever, trec-covid, quora, germanquad, vihealthqa, ma-amazon
-   - query_aug: Specify the query augmentation that you want to try: crop, rm3, summarization, flan, open_llama, qgen.
-      Note that qgen is only one tested on Vietnamese and German datasets.
-   - ques_per_passage: Number of synthetic quries per document
-   - retrieval_model_name: Specify a retrieval model that you want to try.
-      For English, all-mpnet-base-v2, msmarco-distilbert-base-v3, Muennighoff/SGPT-125M-weightedmean-msmarco, sentence-transformers/distiluse-base-multilingual-cased-v2
-      For German, svalabs/bi-electra-ms-marco-german-uncased, T-Systems-onsite/cross-en-de-roberta-sentence-transformer, sentence-transformers/distiluse-base-multilingual-cased-v2
-      For Vietnamese, VoVanPhuc/sup-SimCSE-VietNamese-phobert-base, keepitreal/vietnamese-sbert, sentence-transformers/distiluse-base-multilingual-cased-v2    
-   - gamma: gamma value for decision of similarity model
-   - delta: delta value for decision of similarity score
-   ```
+   (A) Define Experimental Parameters (`config.jsonl`):
+   
+- dataset: Choose a dataset to use for the experiment. Options include: `nfcorpus, scifact, arguana, scidocs, climate-fever, trec-covid, quora, germanquad, vihealthqa, ma-amazon`
+- query_aug: Specify the query augmentation technique. Options: `crop, rm3, summarization, flan, open_llama, qgen`
+-    Note: qgen is currently tested only on Vietnamese and German datasets.
+- ques_per_passage: Set the number of synthetic queries per document.
+- retrieval_model_name: Select a retrieval model.
+  
+     For English: `all-mpnet-base-v2, msmarco-distilbert-base-v3, Muennighoff/SGPT-125M-weightedmean-msmarco, sentence-transformers/distiluse-base-multilingual-cased-v2`
+  
+     For German: `svalabs/bi-electra-ms-marco-german-uncased, T-Systems-onsite/cross-en-de-roberta-sentence-transformer, sentence-transformers/distiluse-base-multilingual-cased-v2`
+  
+     For Vietnamese: `VoVanPhuc/sup-SimCSE-VietNamese-phobert-base, keepitreal/vietnamese-sbert, sentence-transformers/distiluse-base-multilingual-cased-v2`
+  
+- gamma: Set the gamma value for the decision of similarity model.
+  
+- delta: Set the delta value for the decision of similarity score.
 
-   (B) Include python path:
+   (B) Set Python Path:
    ```
    export PYTHONPATH=${PYTHONPATH}:/content/udl
    ```
    
-   (C) Run the experiment: 
+   (C) Run the Experiment: 
    ```
    python udl/main.py
    ```
    
    (D) Additional Notes:
    
-   - MA-Amazon Dataset: Run the following to convert the MA-Amazon dataset to BEIR format. 
+   - MA-Amazon Dataset: To convert the MA-Amazon dataset to BEIR format, run:
    ```
    python udl/ma_amazon_in_beir.py
    ```      
     
 
-### Our implementation is highly influenced by https://github.com/beir-cellar/beir.
+#### Our implementation is highly influenced by https://github.com/beir-cellar/beir.
 
-### If you use this code or build upon this idea, please cite the following paper:
+#### If you use this code or build upon this idea, please cite the following paper:
 ```bibtext
 @inproceedings{hwang-etal-2024-link,
     title = "Link, Synthesize, Retrieve: Universal Document Linking for Zero-Shot Information Retrieval",
