@@ -33,47 +33,50 @@ We hope you find these resources helpful!
    (I) Evaluate Retrieval Model - Assess the performance of the retrieval model.
 
 ## Setup:
-   (A) Create virtual environment. 
+   (A) Create a Virtual Environment: 
    ```
    conda create -n [YOUR_VENV_NAME] python=3.10
    ```
  
-   (B) Install the required packages.
+   (B) Install Required Packages:
    ```
    pip install -r requirements.txt
    ```
 
-   (C) Download NER Models. You are welcome to try the other NER models. 
+   (C) Download NER Models:
+
+   You can try different NER models. Here are some suggested installations:
+ 
    ```
    pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.1/en_core_sci_scibert-0.5.1.tar.gz
 
    python -m spacy download en_core_web_trf
    ```
    
-   (D) Some extra setups:
-   - You may need to upgrade transformers to avoid the error during decision of similarity score   
+   (D) Additional Setup Steps:
+   - Transformers Library: To avoid potential errors when calculating similarity scores, use the following transformers version:
    ```
    pip install transformers==4.30.2    
    ```  
-   - For Muennighoff/SGPT-125M-weightedmean-msmarco, install the following
+   - SGPT Model: For Muennighoff/SGPT-125M-weightedmean-msmarco, install this specific version:
    ```
    pip install --upgrade git+https://github.com/Muennighoff/sentence-transformers.git@sgpt_poolings_specb
    ```
-   - For open_llama, install the following
+   - Open LLaMA Model: Install the following:
    ```
    pip install protobuf==3.20
    ```
-   - For rm3, install the following
+   - RM3: Install python-terrier for RM3 support:
    ```
    pip install python-terrier
-   ```
-   - For multiple calling of rm3, remove index folder
+   ```   
+   To clear multiple calls of RM3, delete the index folder:   
    ```
    rm index -r
    ```      
-   - For MA-Amazon, run following command to download data
+   - MA-Amazon Dataset: Clone the repository to download the dataset:
    ```
-   git clone https://github.com/amazon-science/esci-data.git to download data
+   git clone https://github.com/amazon-science/esci-data.git 
    ```      
 
 ## Runbook:
