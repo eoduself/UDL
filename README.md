@@ -90,7 +90,7 @@ There are two versions of codes: Notebook and Script.
 - Our implementation is highly influenced by https://github.com/beir-cellar/beir.
 
 
-### Please cite the following paper when considering this code or idea.
+### If you use this code or build upon this idea, please cite the following paper:
 ```bibtext
 @inproceedings{hwang-etal-2024-link,
     title = "Link, Synthesize, Retrieve: Universal Document Linking for Zero-Shot Information Retrieval",
