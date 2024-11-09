@@ -100,6 +100,7 @@ def evaluation(dataset, data_path, model_save_path, batch_size=32, score_functio
                     if key in list_per:
                         print(key, ndcg[key]*100)
                         record[key] = ndcg[key]*100
-
+                        
+    ## Results are saved in the following file
     with open("Result-"+dataset+".jsonl", "w") as output:
         json.dump(record, output)
