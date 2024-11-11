@@ -1,7 +1,7 @@
 # Universal Document Linking for Enhancing the Zero-Shot Retrieval 
 
 > [!NOTE]
-> We plan to share retrieval models fine-tuned using the Universal Document Linking (UDL) method.
+> Performance variations may arise due to inconsistencies in synthetic query generation. To address this, we plan to share retrieval models fine-tuned with the Universal Document Linking (UDL) method.
 
 Thank you for visiting our repository for *Link, Synthesize, Retrieve: Universal Document Linking for Zero-Shot Information Retrieval*, presented at EMNLP 2024.
 
@@ -119,7 +119,6 @@ All files referenced below are located within the `udl` folder.
    python udl/ma_amazon_in_beir.py
    ```      
     
-
 #### Our implementation is highly influenced by https://github.com/beir-cellar/beir.
 
 #### If you use this code or build upon this idea, please cite the following paper:
